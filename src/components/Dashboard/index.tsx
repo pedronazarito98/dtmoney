@@ -1,4 +1,3 @@
-import React from "react";
 import { TransactionsTable } from "../TransactionsTable";
 import { Summary } from "../Summary";
 import { Container } from "./styles";

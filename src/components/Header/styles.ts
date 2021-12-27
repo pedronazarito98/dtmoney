@@ -1,30 +1,38 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Container = styled.header`
-    background: var(--blue);
+  background: var(--blue);
 `;
 
 export const Content = styled.div`
-    max-width: 1200px;
-    margin: 0 auto;
+  max-width: 1200px;
+  margin: 0 auto;
 
-    padding: 2rem 1rem 12rem;
-    display: flex;
+  padding: 2rem 1rem 12rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (max-width: 375px) {
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+  }
+`;
 
-    button {
-        font-size: 1rem;
-        color: #fff;
-        background: var(--blue-light);
-        border:0;
-        padding: 0 2rem;
-        border-radius: 0.25rem; //4px
-        height: 3rem;
-        transition: filter 0.2s;
+export const ButtonTransaction = styled.button`
+  font-size: 1rem;
+  color: #fff;
+  background: var(--blue-light);
+  border: 0;
+  padding: 0 2rem;
+  border-radius: 0.25rem; //4px
+  height: 3rem;
+  transition: filter 0.2s;
 
-        &:hover {
-            filter: brightness(0.9)
-        }
-    }
-`
+  &:hover {
+    filter: brightness(0.9);
+  }
+  @media (max-width: 375px) {
+    margin-top: 2.5rem;
+  }
+`;
